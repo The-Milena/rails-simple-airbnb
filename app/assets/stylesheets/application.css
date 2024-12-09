@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "flats/index";
+ @import "/components/navbar";

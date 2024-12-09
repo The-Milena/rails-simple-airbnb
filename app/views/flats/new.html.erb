@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center m-4">
+    <h2 class="text-center"> Add a new flat </h2>
+    <div class="col-4">
+    <%= simple_form_for @flat do |f|%>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :price_per_night %>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+    <%= link_to "Cancel", flats_path, class: "btn btn-danger" %>
+  </div>
+</div>

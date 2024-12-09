@@ -1,0 +1,21 @@
+<div class="map" style="background-image: url('<%= @flat.picture_url %>')"></div>
+<div class="container m-2 p-3">
+  <div class="d-flex flex-column gap-3 row">
+    <div class="card p-3 col-7">
+      <h2> <%= @flat.name %></h2>
+      <p> Address: <%= @flat.address %> </p>
+    </div>
+    <div class="card p-3 col-7">
+      <h3>A bit more about this flat...</h3>
+      <p> <%= @flat.description %> </p>
+    </div>
+    <div class="card p-3 col-7">
+      <h3>Details</h3>
+      <div class="d-flex flew-row gap-4">
+      <p> <i class="fa-solid fa-people-group"></i> <%= @flat.number_of_guests%> </p>
+      <p> <i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night%> </p>
+      </div>
+    </div>
+  </div>
+  <%= link_to "Return", flats_path, class: "btn btn-primary mt-3"%>
+</div>
